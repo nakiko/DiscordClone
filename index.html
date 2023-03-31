@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <title>Discord Clone</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+            body{
+                margin: 0;
+                font-family: 'Noto Sans', sans-serif;
+            }
+            .first{
+                background-image: url(back.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom: 135px;
+            }
+            .header{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: white;
+                padding: 15px 50px;
+                padding-bottom: 80px;
+
+            }
+            .discord{
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+                font-weight: bold;
+                gap: 10px;
+            }
+            .discord img{
+                display: block;
+                height: 23px;
+            }
+            .link{
+                display: flex;
+                align-items: center;
+                gap: 45px;
+            }
+            .link a{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+            }
+           .link a:hover{
+                text-decoration: underline;
+           }
+            .open a{
+                background-color: white;
+                padding: 10px 15px;
+                color: #23272A;
+                text-decoration: none;
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 500;
+
+            }
+            .texthead {
+                text-align: center;
+                font-family: 'Sigmar One', cursive;
+                font-size: 55px;
+                color: #FFFFFF;
+                
+
+            }
+            .par{
+                text-align: center;
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 180%;
+            }
+           .look {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 50px;
+            margin-top: 45px;
+           }
+           .down{
+            background-color: #FFFFFF;
+            color: #23272A;
+            padding:14px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+           }
+           .down a{
+            text-decoration: none;
+            color: #23272A;
+            font-weight: 400;
+           }
+           .down img{
+            width: 25px;
+           }
+           .brow a{
+            background-color: #23272A;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding:16px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+           }
+           .create{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 123px 145px;
+           
+           }
+           
+           .createtext h1{
+            color: #23272A;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 120%;
+           }
+           .createtext p{
+            color: #23272A;
+            line-height: 200%;
+            font-size: 17px;
+           }
+           .where{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 123px 145px;
+            background-color: #f3f3f3f0;
+           }
+           
+           .wheretext h1{
+            color: #23272A;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 120%;
+           }
+           .wheretext p{
+            color: #23272A;
+            line-height: 200%;
+            font-size: 17px;
+           }
+           
+           .fan{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 123px 145px;
+           
+           }
+           
+           .fantext h1{
+            color: #23272A;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 120%;
+           }
+           .fantext p{
+            color: #23272A;
+            line-height: 200%;
+            font-size: 17px;
+           }
+           .tech{
+            background-color: #f3f3f3f0;
+            margin-bottom: 0;
+            padding: 80px;
+            padding-bottom:20px ;
+           }
+           .tech h1{
+            text-align: center;
+            font-family: 'Changa One', cursive;
+            color: #23272A;
+            font-size: 52px;
+            letter-spacing: 2px;
+           }
+           .tech p{
+            color: #23272A;
+            text-align: center;
+            line-height: 200%;
+            font-size: 17px;
+           }
+           .tech img{
+            display: block;
+            width: 1180px;
+            margin: auto;
+           }
+           .spark{
+            display: block;
+            margin: auto;
+            
+           }
+           
+           .tech h2{
+            text-align: center;
+            color: #23272A;
+            font-size: 30px;
+           }
+           .last{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f3f3f3f0;
+            margin: 0;
+            padding-bottom: 100px;
+           }
+           .win{
+            background-color: #5965F2;
+            color: #FFFFFF;
+            padding:12px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+           }
+           .win a{
+            text-decoration: none;
+            color: #FFFFFF;
+           }
+           .win img{
+            width: 25px;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <div class="first">
+         <div class="header">
+            <div class="discord">
+                <img src="log.png" alt="">
+                <h1>Discord</h1>
+         
+            </div>
+            <div class="link">
+                <a href="">Download</a>
+                <a href="">Nitro</a>
+                <a href="">Discover</a>
+                <a href="">Safety</a>
+                <a href="">Support</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+            </div>
+            <div class="open">
+              <a href="">Login</a>
+           </div>
+          </div>
+                      
+            <h1 class="texthead">IMAGINE A PLACE...</h1>
+            <p class="par">...where you can belong to a school club, a gaming group, or a worldwide art community. <br>
+                Where just you and a handful of friends can spend time together. A place that makes it easy <br>
+                 to talk every day and hang out more often.</p>
+                 
+                 <div class="look">
+                    <div class="down">
+                        <img src="down.png" alt="">
+                        <a href="">Download for Windows</a>
+                    </div>
+                    <div class="brow"><a href="">Open Discord in your browser</a></div>
+                </div>
+        </div>
+        <div class="create">
+            <img src="create.svg" alt="">
+            <div class=" createtext">
+                <h1>Create an invite- <br>
+                    only place where <br>
+                    you belong</h1>
+                    <p>Discord servers are organized into topic- <br>
+                        based channels where you can collaborate, <br>
+                         share, and just talk about your day without <br>
+                          clogging up a group chat.</p>
+            </div>
+        </div>
+
+        <div class="where">
+            <div class="wheretext">
+                <h1>Where hanging <br>
+                    out is easy</h1>
+                <p>Grab a seat in a voice channel when you’re <br>
+                     free. Friends in your server can see you’re <br>
+                      around and instantly pop in to talk without <br>
+                       having to call.</p>
+            </div>
+            <img src="where.svg" alt="">
+        </div>
+
+        <div class="fan">
+            <img src="fan.svg" alt="">
+            <div class=" fantext">
+                <h1>From few to a <br>
+                    fandom</h1>
+                    <p>Get any community running with moderatio <br>
+                         tools and custom member access. Give <br>
+                          members special powers, set up private <br>
+                          channels, and more.</p>
+            </div>
+        </div>
+        
+        <div class="tech">
+            <h1>RELIABLE TECH FOR STAYING CLOSE</h1>
+            <p>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their <br>
+                games, or gather up and have a drawing session with screen share.
+            </p>
+            <img src="tech.svg" alt="">
+            
+            <div class="spark"><img src="spark.svg" alt=""></div>
+           <div class="ready">
+            <h2>Ready to start your journey?</h2>
+           </div>
+        </div>
+        <div class="last">
+        <div class="win">
+            <img src="do.png" alt="">
+            <a href="">Download for Windows</a>
+            </div>
+            </div>
+    </body>
+</html>
